@@ -1,0 +1,31 @@
+@keyframes blinking{
+    0%{opacity: 0}
+    50%{opacity: .7}
+    100%{opacity: 0}
+} 
+
+.user_image_wrapper{
+    position: relative;
+    width: 65px;
+    height: 65px;
+}
+
+.user_image_wrapper img {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.user_image_wrapper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 68px;
+    background-color: #368FFC;
+    border-radius: 50%;
+    animation: blinking 3s ease-out infinite both;
+}

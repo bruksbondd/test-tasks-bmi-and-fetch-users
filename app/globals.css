@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #B6D7FF;
+  --text-color-black: #1e293b;
+  --text-color-white: #ffffff;
+  --background-color-grey: #E4E8E9;
+}
+
+
+body {
+  background: var(--background-color-grey);
+}
+
+.activeLink {
+  background: var(--secondary-color);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

@@ -1,0 +1,49 @@
+.headerBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 70px;
+}
+
+.headerLists {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  align-content: center;
+  gap: 40px;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.headerLink {
+  background: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 18px 40px;
+  font-size: 16px;
+  font-weight:600;
+  line-height: 17px;
+  color: var(--text-color-black);
+  position: relative;
+  border: 2px solid var(--primary-color);
+  border-radius: 62px;
+  transition: color 0.3s ease-in-out;
+}
+
+.headerLink:hover,
+.headerLink:focus {
+  background: var(--secondary-color);
+  transition: color 0.3s ease-in-out;
+}
+
+
+@media screen and (max-width: 480px) {
+  .headerLists {
+    gap: 10px;
+  }
+  .headerLink {
+    padding: 10px 25px;
+  }
+}
