@@ -1,4 +1,4 @@
-## PRODUCTION URL: 
+## PRODUCTION URL: https://test-tasks-bmi-and-fetch-users.vercel.app/
 
 ## Setup project
 
